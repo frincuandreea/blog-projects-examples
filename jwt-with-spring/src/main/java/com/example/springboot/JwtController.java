@@ -11,9 +11,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping(path="/api/jwt")
 public class JwtController {
 
-	private final JWTTokenComponent jwtTokenComponent;
+	private final JWTTokenService jwtTokenComponent;
 
-	public JwtController(JWTTokenComponent jwtTokenComponent) {
+	public JwtController(JWTTokenService jwtTokenComponent) {
 		this.jwtTokenComponent = jwtTokenComponent;
 	}
 

@@ -5,9 +5,7 @@ import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.JwtParser;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
-import io.jsonwebtoken.jackson.io.JacksonDeserializer;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import javax.crypto.spec.SecretKeySpec;
@@ -19,7 +17,7 @@ import java.util.Map;
 import java.util.function.Function;
 
 @Service
-public class JWTTokenComponent{
+public class JWTTokenService {
 
   private static final String TOKEN_DATA = "tokenData";
   @Autowired
